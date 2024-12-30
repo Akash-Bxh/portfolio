@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="AK.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Electronics Engineer</p>
+                <h1>Hi, I'm <span>Akash</span></h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="about.jpg">
+                </div>
+                <div class="col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> I am a final-year Electronics and Communication Engineering (ECE) student at Central University
+                        of Rajasthan, with experience in PCB designing, RF/antenna design, and embedded systems. My
+                        projects include antenna simulation, PCB fabrication, and other technical areas, reflecting my
+                        strong problem-solving skills. <br> <br>In addition to my electronics background, I am also a
+                        front-end developer with a focus on
+                        creating responsive and dynamic web applications. I have worked on projects utilizing HTML, CSS,
+                        and JavaScript to build user-friendly interfaces.</p>
+                    <div class="titles">
+                        <p class="link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="link" onclick="opentab('experiences')">Experiences</p>
+                        <p class="link" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="titles-content active-content" id="skills">
+                        <ul>
+                            <li><span>Software Used</span><br>CST Studio Suit, MATLAB, KiCAD, MultiSim, Keli, Xilinx
+                                Vivado, Arduino IDE</li>
+                            <li><span>Language</span><br>C/C++, HTML, CSS, Java Script</li>
+                            <li><span>Addition Skills</span><br>Proficient in Microsoft Word, Excel (formulas, Data
+                                Analysis), and PowerPoint (design, animation), Graphic design tools like Canva</li>
+                        </ul>
+                    </div>
+                    <div class="titles-content" id="experiences">
+                        <ul>
+                            <li><span>June - Aug 2024</span><br>Research Internship, NIT Patna<br>Plasma Antenna Design
+                                & Simulation</li>
+                        </ul>
+                    </div>
+                    <div class="titles-content" id="education">
+                        <ul>
+                            <li><span>2021 - current</span><br>BTech<br>Electronics & Communication Engineer<br>Central
+                                University of Rajasthan, Ajmer</li>
+                            <li><span>2017 - 2019</span><br>Senior Secondary Education<br>P N Anglo Sanskrit High
+                                School, Patna</li>
+                            <li><span>2016 - 2016</span><br>Secondary Education<br>Sri Liladhar High School, Benipatti
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------My Project--------->
+
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My Project</h1>
+            <h2>Core Electronics Projects</h2>
+            <div class="project-list">
+                <div class="work">
+                    <img src="antenna.jpg">
+                    <div class="layer">
+                        <h3><b>Plasma Antenna <br>Design & Simulation</b></h3>
+                        <p>My project focuses on comparing metal antennas with plasma antennas, analyzing key parameters
+                            such as gain, S11, far-field patterns, and overall performance.</p>
+                        <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="80511.jpg">
+                    <div class="layer">
+                        <h3><b>8051 <br> Development Board</b></h3>
+                        <p>I designed an 8051 development board using KiCAD and screen printing methods, featuring the
+                            microcontroller, clock and reset circuits, power supply, and various I/O and peripheral
+                            interfaces for project development.</p>
+                        <a href="https://github.com/Akash-Bxh/8051-Development-Board" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="work">
+                    <img src="IR (2).jpg">
+                    <div class="layer">
+                        <h3><b>IR Sensor</b></h3>
+                        <p>This project involves designing an IR sensor circuit using the 8051 microcontroller in KiCAD,
+                            featuring signal detection and LED indicators.
+                        </p>
+                        <a href="https://github.com/Akash-Bxh/Design-and-Implementation-of-an-IR-Sensor-Circuit-Using-8051-Microcontroller-in-KiCAD"
+                            target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <a href="https://github.com/Akash-Bxh" target="_blank" class="btn">See more</a>
+            <h2>Web Development Project</h2>
+            <div class="project-list">
+                <div class="work">
+                    <img src="80511.jpg">
+                    <div class="layer">
+                        <h3><b>Project Name</b></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, illum.</p>
+                        <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="80511.jpg">
+                    <div class="layer">
+                        <h3>Project Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, illum.</p>
+                        <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+
+                </div>
+
+                <div class="work">
+                    <img src="80511.jpg">
+                    <div class="layer">
+                        <h3>Project Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, illum.</p>
+                        <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <a href="https://github.com/Akash-Bxh" target="_blank" class="btn">See more</a>
+
+        </div>
+    </div>
+    <!--------contact------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-titles">Contact Me</h1>
+                    <p>Email: akashkumarbhandari1@gmail.com</p>
+                    <p>Phone: 7481898925</p>
+                    <div class="social-link">
+                        <a href="www.linkedin.com/in/akash8989" target="_blank"><i class="fa-brands fa-linkedin"
+                                style="color: #275db9;"></i></a>
+                        <a href="https://github.com/Akash-Bxh" target="_blank"><i class="fa-brands fa-github"
+                                style="color: #2354a9;"></i></a>
+                        <a href="https://www.instagram.com/akash.kumar__00/" target="_blank"><i
+                                class="fa-brands fa-instagram" style="color: #b21f1f;"></i></a>
+                    </div>
+                    <a href="cv.pdf" download class="btn1">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="1" placeholder="Your Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxt2-Yqu4TysNx0rlfl0XWt1SvUDhoQDSZB-8HzlksJlhGsO3moq3OICici2eMChrS3Bg/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
